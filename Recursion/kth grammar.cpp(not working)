@@ -1,0 +1,39 @@
+//we will have n,k
+//we need to print nth row kth column elemnt
+//if n-1 ele has 0 add 0 1 if 1 add 1 0
+//0
+//01
+//0110
+//01101001
+
+//this will be array
+#include<bits/stdc++.h>
+using namespace std;
+int kthgrammar(int N,int K)
+{
+//     if(n==1&k==1)
+//         return 0;
+    
+int mid=pow(2,N-1)/2;
+
+// if(k<=mid)
+//     return kthgrammer(n-1,k);
+// else
+//   return ~kthgrammer(n-1,k-mid);
+
+  if(N == 1) return 0;
+      if(K % 2 == 0){
+      return kthgrammar(N - 1, K / 2) == 0 ? 1 : 0;
+      }else{
+         return kthgrammar(N - 1, K-mid);
+      }
+}
+
+int main()
+{
+    int n,k;
+    cin>>n,k;
+    cout<<kthgrammar(n,k);
+   
+    return 0;
+}
