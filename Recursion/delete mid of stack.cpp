@@ -32,6 +32,10 @@ int main()
     }
   //Here we are passing size and original_size
   //we can directy pass mid value only and decrease it and create our base condition accordingly 
+    //like
+    //int mid=size/2;
+    //del_mid(s,mid);
+//and base condition : if(mid==1) s.pop();return;
     del_mid(s,n,n);
 
     while(!s.empty())
