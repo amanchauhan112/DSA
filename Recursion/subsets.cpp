@@ -1,3 +1,6 @@
+//To avoid duplicates use map before printing
+//For lexographic order use vector and sort it 
+
 #include <bits/stdc++.h>
 using namespace std;
 
