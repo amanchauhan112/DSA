@@ -33,9 +33,7 @@ int main()
  
     output+=input[0];
     input.erase(input.begin()+0);   
-   
-    cout<<"Subsets of given string are : \n ";
-    
+       
     addPermutation(input,output);
     
     return 0;
