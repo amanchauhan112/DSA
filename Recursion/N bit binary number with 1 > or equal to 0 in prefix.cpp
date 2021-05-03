@@ -1,3 +1,7 @@
+//Eg. 11011
+//Prefix 11011,1101,110,11,1
+//Each prefix has 1 > equals 0
+
 #include <bits/stdc++.h>
 using namespace std;
 
