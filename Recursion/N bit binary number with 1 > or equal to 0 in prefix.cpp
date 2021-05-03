@@ -22,14 +22,10 @@ void balance(int o,int z,string op,vector<string>&v,int n)
    
         balance(o,z+1,op1,v,n-1);
     }
-   if(o<n)
-   {
-       string op1=op;
+         string op1=op;
         op1+="1";
-        // in.erase(ip[0]+0)
-    
         balance(o+1,z,op1,v,n-1);
-   }
+
 }
 
 int main()
