@@ -44,6 +44,37 @@ bool search(Node*head,int data)
         search(head->left,data);    
 }
 
+Node*min(Node*head)
+{
+    if(!head)
+        cout<<"Not Found";
+    if(!head->left)
+        cout<<head->data;
+    else    
+        min(head->left);    
+}
+
+Node*max(Node*head)
+{
+    if(!head)
+        cout<<"Not Found";
+    if(!head->right)
+        cout<<head->data;
+    else    
+        max(head->right);    
+}
+
+int height(Node*head)
+{
+    if(!head)
+        return -1;
+    else
+        return max(height(head->left),height(head->right))+1;
+        
+        
+}
+    
+
 int main()
 {
     Node * root =NULL;
@@ -51,10 +82,15 @@ int main()
     root=insert(root,10);
     root=insert(root,15);
     
-    if(search(root,11)==true)
-        cout<<"Found";
+    if(search(root,15)==true)
+        cout<<"Found\n";
     else
-      cout<<"Not Found";
-        
+      cout<<"Not Found\n";
+        cout<<"Minimum:";
+        min(root);
+          cout<<"\nMaximum:";
+           max(root);
+           cout<<"\nMaximum height:";
+           cout<<height(root);  
     // return 0;
 }
