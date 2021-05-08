@@ -57,7 +57,7 @@ bool isSubtreeLesser(Node*root,int data)
 }
     
 
-int isBST(Node*root)
+int isBST(Node*root) //O(N^2)
 {
     if(!root)
         return true;
@@ -68,7 +68,22 @@ int isBST(Node*root)
     else
         return false;    
  }
-    
+        //Efficient Way: O(N)
+
+// bool isBSTree(Node*root,int min,int max)
+// {
+//     if(!root)
+//         return true;
+//     if(root->data>min
+//     &&root->data<max
+//     &&isBSTree(root->left,min,root->data)
+//     &&isBSTree(root->right,root->data,max))
+//         return true;
+//     else
+//         return false;
+// }
+
+//where min max are INT_MIN && INT_MAX
 int main()
 {
     Node * root =NULL;
