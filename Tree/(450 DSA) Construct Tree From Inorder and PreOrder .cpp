@@ -13,7 +13,7 @@ Node*construct(int in[],int pre[],int l,int h,int&preIndex)
         
     int i;
     for(i=l;i<=h;i++)
-        if(root->data == in[i])
+        if(root->data == in[i]) //It is finding Index in Inorder Array 
             break;
             
     if(i <= h)
