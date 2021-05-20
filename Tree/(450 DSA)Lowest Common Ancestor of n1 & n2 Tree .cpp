@@ -3,6 +3,15 @@
 
 //(Parent Node of both)
 
+// Tip : It is very important to understand LCA in various scenarios before attempting the question.
+
+// The solution is very easy if all scenarios understood clearly.
+
+// scenario 1: both n1 and n2 are in left and right subtree of the ancestor. (return the ancestor)
+// scenario 2 : either n1 or n2 is the ancestor or other. Then return the ancestor(node n1 or n2)
+// scenario 3 : only one of n1 or n2 found. the return that node
+// scenario 4 : none found. return null
+
 Node* LCA(Node*root,int n1,int n2)
     {
         
