@@ -19,3 +19,18 @@ Hypothesis : the program u want  to do Eg. to print (cout<<n;)
 ### 2)Recursive Tree
 
 ->Input nd Output TREE
+
+## For Graph:
+
+In parameters we are mostly given no. of nodes and a list that contains first node connected to index valued node
+
+<img src=""> 
+For eg. : if 0 connected to 1 2 3 and 2 is connected to 4
+
+adj[0] : 0->1->2->3
+
+then 1 and 3 are leaf node
+
+Node 2 is connected to leaf 4 so adj[2] : 2->4
+
+and adj[1],adj3,adj4:1,3,4 respectively.
