@@ -1,6 +1,6 @@
 # DSA
 
-DSA Practice  I am doing from Final 450 sheet and GFG,Leetcode.
+DSA Practice  I am doing from Final 450 sheet by Love Babbar and GFG,Leetcode.
 
 Whichever answer I find the best I put it here.
 
