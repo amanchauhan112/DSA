@@ -24,7 +24,6 @@ Hypothesis : the program u want  to do Eg. to print (cout<<n;)
 
 In parameters we are mostly given no. of nodes and a list that contains first node connected to index valued node
 
-<img src=""> 
 For eg. : if 0 connected to 1 2 3 and 2 is connected to 4
 
 adj[0] : 0->1->2->3
