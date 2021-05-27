@@ -28,8 +28,17 @@
 	            
 	        }
 	    }
-	    
-	    }
+		 
+//	//	For loop can also be written as:  
+		    
+// 		for(int i=0;i<adj[temp].size();i++)
+// 		{
+// 	       if(!visited[adj[temp][i]])
+// 	        {
+// 	           q.push(adj[temp][i]);
+// 	           visited[adj[temp][i]]=1;
+// 	        }
+// 	    }
 	    
 	    return v;
 	}
